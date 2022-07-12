@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/casino_table"
+    tools:context=".PlayGame">
+
+    <ImageView
+        android:id="@+id/imgPcCardFour"
+        android:layout_width="65dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="32dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/imgPcCardFive"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imgPcCardTwo"
+        android:layout_width="65dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="32dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/imgPcCardThree"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imgPcCardThree"
+        android:layout_width="65dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="32dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/imgPcCardFour"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imgPcCardOne"
+        android:layout_width="65dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgPcCardTwo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imgPcCardFive"
+        android:layout_width="65dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="32dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/pcCardCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="-"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPcCardThree" />
+
+    <TextView
+        android:id="@+id/orMsgPc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="OR"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/pcCardCountAlt"
+        app:layout_constraintStart_toEndOf="@+id/pcCardCount"
+        app:layout_constraintTop_toBottomOf="@+id/imgPcCardThree" />
+
+    <TextView
+        android:id="@+id/pcCardCountAlt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="-"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pcCardCount"
+        app:layout_constraintTop_toBottomOf="@+id/imgPcCardThree" />
+
+    <TextView
+        android:id="@+id/maxCardsMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maximum Cards: "
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgPlayerCardThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPcCardThree" />
+
+    <TextView
+        android:id="@+id/playerCardCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="-"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgPlayerCardThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/orMsgPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="OR"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imgPlayerCardThree"
+        app:layout_constraintEnd_toStartOf="@+id/playerCardCountAlt"
+        app:layout_constraintStart_toEndOf="@+id/playerCardCount" />
+
+    <TextView
+        android:id="@+id/playerCardCountAlt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="-"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imgPlayerCardThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playerCardCount" />
+
+    <ImageView
+        android:id="@+id/imgPlayerCardOne"
+        android:layout_width="65dp"
+        android:layout_height="135dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnHit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imgPlayerCardTwo"
+        android:layout_width="65dp"
+        android:layout_height="135dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnHit"
+        app:layout_constraintStart_toEndOf="@+id/imgPlayerCardOne"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imgPlayerCardThree"
+        android:layout_width="65dp"
+        android:layout_height="135dp"
+        android:layout_marginBottom="28dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnHit"
+        app:layout_constraintStart_toEndOf="@+id/imgPlayerCardTwo"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imgPlayerCardFour"
+        android:layout_width="65dp"
+        android:layout_height="135dp"
+        android:layout_marginBottom="28dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnHit"
+        app:layout_constraintStart_toEndOf="@+id/imgPlayerCardThree"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imgPlayerCardFive"
+        android:layout_width="65dp"
+        android:layout_height="135dp"
+        android:layout_marginBottom="28dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnHit"
+        app:layout_constraintStart_toEndOf="@+id/imgPlayerCardFour"
+        app:srcCompat="@drawable/back" />
+
+    <Button
+        android:id="@+id/btnHit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Hit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/btnStand" />
+
+    <Button
+        android:id="@+id/btnStand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Stand"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnHit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

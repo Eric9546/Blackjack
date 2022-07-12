@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/casino_table"
+    tools:context=".ViewHistory">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/historyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_gravity="bottom"
+        app:srcCompat="@drawable/ic_refresh_foreground" />
+
+</android.support.design.widget.CoordinatorLayout>
